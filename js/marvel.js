@@ -1,6 +1,6 @@
-const md5="f078b935921ad2b1c83f88a737625418"
-const baseUrl="https://gateway.marvel.com/v1/public/comics?ts=1000&apikey=7a3ca58120c1d68369f9eb634e7401a1&hash="+md5;
-console.log(baseUrl);
+import {md5,token,base} from './config.js';
+
+const baseUrl=base+"comics"+token+md5;
 
 const getMarvel=()=>{
     fetch(baseUrl)
