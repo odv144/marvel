@@ -1,0 +1,206 @@
+:root{
+  --color1:#CDF5FD;
+  --color2:#0044ff;
+  --color3:#f17171;
+  --color4:#f00303;
+  --fondo:#837f7f;
+  --fondoForm: var(--color3);
+  --bordeInput:#005580;
+  --fondoInput: var(--color2);
+  --texto:#ffffff;
+  --sombra: #000000;
+}
+html{
+  /* background: linear-gradient(to bottom, black); */
+  min-height:100vh;
+  
+}
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background: linear-gradient(var(--color4),var(--sombra));
+  /* background-color: var(--fondo); */
+ 
+  color:var(--texto);
+  
+}
+
+header {
+  background:repeating-radial-gradient(rgba(102, 102, 102, 0.726),rgba(255, 0, 0, 0.705) 25px);
+  min-height: 150px;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  
+}
+header a{
+  color:var(--texto);
+  font-size: 1.5em;
+  max-height: 20px;
+  margin: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+  text-shadow: 2px 1px 0.8px var(--sombra);
+  border:2px solid var(--color4);
+  border-radius: 15px;
+  background:var(--color3);
+}
+header a:hover{
+  background-color: var(--color4);
+}
+
+section{
+  background-image: url(../img/MARVEL_universe.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#card{
+  display: flex; 
+  flex-direction: row;
+  flex-wrap:wrap;
+  justify-content: space-around;
+  position: relative;
+  top:500px;
+ 
+}
+.card{
+  border: 2px solid black;
+  border-radius: 15px;
+  background:linear-gradient(rgba(155, 155, 155, 0.904),var(--sombra));
+  min-width: 28%;
+  max-width: 28%;
+  margin:1% 0;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+ 
+}
+.card h3{
+  color:white;
+  text-shadow: 1px 1px 10px rgb(2, 2, 2);
+  min-height: 4em;
+}
+.description-text{
+  min-height: 50px;
+  max-height: 150px;
+  color: white;
+ 
+}
+.card img{
+  max-width: 95%;
+  height: 498px;
+  
+}
+
+.card-link{
+  text-decoration: none;
+  font-weight: bold;
+ 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+}
+
+
+/*para pantallas menores a 500px*/
+@media (max-width: 500px) {
+ 
+header {
+  background-color: var(--color4);
+  
+  min-height: 150px;
+  display:flex;
+  
+  justify-content: space-around;
+  align-items: center;
+  
+}
+header a{
+  color:var(--texto);
+  font-size: 1.5em;
+  max-height: 20px;
+  margin: 5px;
+  padding: 5px;
+  text-decoration: none;
+  text-shadow: 2px 1px 0.8px var(--sombra);
+  border:2px solid var(--color4);
+  border-top-left-radius: 15px ;
+  border-top-right-radius: 15px;
+  background:var(--color3);
+}
+header a:hover{
+  background-color: var(--color4);
+}
+
+section{
+  background-image: url(MARVEL_universe.jpg);
+  background-attachment: fixed;
+  
+ 
+}
+.contenedor{
+  width: 100%;
+  
+}
+#card{
+  display: flex; 
+  flex-direction: column;
+  flex-wrap:wrap;
+  justify-content: space-around;
+ 
+}
+.card{
+  border: 2px solid black;
+  border-radius: 15px;
+  background-color: rgba(155, 155, 155, 0.904);
+  min-width: 98%;
+ 
+  margin:1% 0;
+  padding: 1%;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+ 
+}
+.card h3{
+  color:white;
+  text-shadow: 1px 1px 10px rgb(2, 2, 2);
+  min-height: 4em;
+}
+.description-text{
+  min-height: 50px;
+  max-height: 150px;
+  color: white;
+ 
+}
+.card img{
+  max-width: 95%;
+  height: 498px;
+  
+}
+
+.card-link{
+  text-decoration: none;
+  font-weight: bold;
+ 
+  padding: 10px;
+  border-radius: 10px;
+}
+
+footer{
+  display:flex;
+  justify-content:center;
+  flex-direction: row;
+}
+
+} 
