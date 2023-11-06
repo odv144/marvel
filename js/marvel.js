@@ -16,7 +16,7 @@ const Peliculas=(Movies)=>{
        document.getElementById("card").innerHTML+=
          ` <div class="card">
           <h3><b>Id: ${Movie.id}</b> ${Movie.title}</h3>
-         <img src="${Movie.images[0]===undefined?'Sin Imagen':Movie.thumbnail.path}.jpg" class="card-img-top" alt="...">
+         <img src="${Movie.images[0]===undefined?'':Movie.thumbnail.path+'.jpg'}" class="card-img-top" alt=" Sin Imagen">
          <div class="card-description">
                  <p class="description-text">Description: 
                         ${(Movie.description===null||Movie.description==='')?"Sin Descripcion":(Movie.description).slice(0,150)+
