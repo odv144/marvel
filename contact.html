@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="./styles/form.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html">Contacto</a>
+        <a href="#">Acerca</a>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <form>
+          <h1>Formulario de contacto</h1>
+          <p>Solicitá un contacto con un asesor</p>
+          <div class="row">
+            <div class="contenedor">
+              <label for="nombre">Nombre(*)</label>
+              <input type="text" name="nombre" id="nombre" required/>
+              
+            </div>
+            <div class="contenedor">
+              <label for="apellido">Apellido(*)</label>
+              <input type="text" name="apellido" id="apellido" required />
+              <span></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contenedor">
+              <label for="dni">DNI(*)</label>
+              <input type="number" name="dni" id="dni" required/>
+              <span id="dni-error"></span>
+            </div>
+            <div class="contenedor">
+              <label for="email">Email(*)</label>
+              <input type="email" name="email" id="email" required/>
+              <span id="email-error"></span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="contenedor">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" name="telefono" id="telefono" />
+              <span id="telefono-error"></span>
+            </div>
+            <div class="contenedor">
+              <label for="tipo_seguro">Tipo de seguro</label>
+              <select name="tipo_seguro" id="tipo_seguro">
+                <option value="basico">Básico</option>
+                <option value="intermedio">Intermedio</option>
+                <option value="premium">Premium</option>
+              </select>
+              <p id="valor"></p>
+            </div>
+          </div>
+          <div class="row">
+            <input id="enviar" type="submit" value="Enviar" />
+          </div>
+        </form>
+      </section>
+    </main>
+    <div id="mensaje"></div>
+
+  </body>
+  <script src="js/functionGral.js"></script>
+</html>

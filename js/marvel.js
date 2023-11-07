@@ -33,3 +33,4 @@ const Peliculas=(Movies)=>{
       
     }
 }
+

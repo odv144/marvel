@@ -1,0 +1,61 @@
+
+section form{
+    display: flex;
+    align-self: center;
+}
+form{
+    width: 50%;
+    min-height: 70vh;
+    /* border: 2px solid black; */
+    border-radius: 20px;
+    box-shadow: 10px 10px 20px  rgba(255, 0, 0, 0.521);
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    background: linear-gradient(rgba(128, 128, 128, 0.8),rgba(0, 0, 0, 0.8));
+    margin:0 auto;
+}
+h1{
+    width:100%;
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 2em;
+    text-shadow: 2px 2px 1px rgb(255, 0, 0);
+}
+
+.row{
+    width: 95%;
+    display: flex;
+    justify-content: space-around;
+}
+.contenedor{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+input, select{
+    color:var(--color4);
+    font-weight: bold;
+    outline: none;
+    border-radius: 5px;
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid rgb(0, 0, 0);
+    border-bottom: 4px solid rgb(0, 0, 0);
+    margin-top:10px;
+}
+
+input[type="submit"]{
+    font-size: 1.5em;
+    text-shadow: 2px 2px 1px black;
+    padding:2% 20%;
+    margin: 5%;
+}
+input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.034);
+    transition: background-color 0.5s ease;
+}

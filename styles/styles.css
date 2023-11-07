@@ -47,6 +47,8 @@ header a{
 }
 header a:hover{
   background-color: var(--color4);
+ 
+  transition: background-color 0.5s ease-in-out;
 }
 
 section{
